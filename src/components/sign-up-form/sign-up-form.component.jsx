@@ -31,7 +31,6 @@ const SignUpForm = () => {
             alert('Passwords do not match');
             return;
         };
-        // create a user document from the return value of createAuthUserWithEmailAndPassword
         try {
             const { user } = await createAuthUserWithEmailAndPassword(email, password);
             await createUserDocumentFromAuth(user, { displayName });
@@ -43,7 +42,6 @@ const SignUpForm = () => {
                 console.log('user creation encoutered an error', error);
             }
         }
-            // similar to sign in component except now we are creating the authenticated user with email and password
     };
 
     const handleChange = (event) => {
@@ -54,7 +52,7 @@ const SignUpForm = () => {
 
     return(
         <div className="sign-up-container">
-        <h2>Don't have an account?</h2>
+            <h2>Don't have an account?</h2>
             <span>Sign up with your email and password</span>
             <form onSubmit={handleSubmit}>
                 <FormInput 
