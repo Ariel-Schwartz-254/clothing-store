@@ -2,6 +2,8 @@
 
 This is a simple e-commerce web app for an online clothing store. It allows users to browse, add to cart and purchase products.
 
+View the live demo [here](https://main--hilarious-brioche-6d2808.netlify.app/)
+
 ## Features
 
 - Browse clothing products by category
